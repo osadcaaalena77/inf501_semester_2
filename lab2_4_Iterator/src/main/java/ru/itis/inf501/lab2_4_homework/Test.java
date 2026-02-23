@@ -1,5 +1,7 @@
 package ru.itis.inf501.lab2_4_homework;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Test {
     public static void main(String args[]) {
         Set501Implement<Person> set = new Set501Implement<>();
@@ -16,6 +18,7 @@ public class Test {
         for (Person x : set) {
             System.out.println(x);
         }
+        System.out.println(set);
 
 //        System.out.println(set.contains(new Person("G", Gender.FEMALE)));
 //        System.out.println(set.contains(new Person("Алёна", Gender.FEMALE)));

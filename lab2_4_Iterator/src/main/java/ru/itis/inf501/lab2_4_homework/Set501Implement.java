@@ -107,9 +107,11 @@ public class Set501Implement<T> implements Set501<T>, Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new Iterator<T>() {
+        return new Iterator<>() {
             int current = 0;
             int i = 0;
+            Node nextNode;
+            Node currentNode;
 
             @Override
             public boolean hasNext() {
@@ -118,62 +120,17 @@ public class Set501Implement<T> implements Set501<T>, Iterable<T> {
 
             @Override
             public T next() {
-                Node node = null;
-                while(set[i] == null) {
-                    i += 1;
+                while (set[i] == null) {
+                    i++;
                 }
                 current++;
-                node = set[i];
-                set[i] = set[i].getNext();
-                return (T)node.getValue();
-
-
-
-
-
-
-
-
-
-//                if (set[i] == null) {
-//                    while (set[i] == null) {
-//                        i++;
-//                    }
-//                } else {
-//                    current++;
-//                    node = set[i];
-//                    set[i] = set[i].getNext();
-//                }
-//                return (T) node.getValue();
+                currentNode = set[i];
+                nextNode = currentNode.getNext();
+                return (T) currentNode.getValue();
             }
         };
     }
 }
-// iterator
-//                if (set[i] != null) {
-//                    while(set[i] != null) {
-//                        set[i] = set[i].getNext();
-//                        return (T)set[current++];
-//                    }
-//                } else {
-//                    i++;
-//                }
-//                return (T)set[current];
-//            }
-
-//                if (set[i] != null) {
-//                    while(set[i] != null) {
-//                        current++;
-//                        Node node = set[i];
-//                        set[i] = set[i].getNext();
-//                        return (T)node.getValue();
-//                    }
-//                } else {
-//                    i++;
-//                }
-//            }
-
-
 
 
 

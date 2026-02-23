@@ -7,9 +7,11 @@ public class TestIterator {
         list.add("1");
         list.add("2");
         list.add("3");
+        System.out.println(list);
 
         for(String x : list) {
             System.out.println(x);
         }
+        System.out.println(list);
     }
 }
