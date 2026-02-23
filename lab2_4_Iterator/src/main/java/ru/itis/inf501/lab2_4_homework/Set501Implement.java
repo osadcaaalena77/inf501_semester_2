@@ -110,8 +110,8 @@ public class Set501Implement<T> implements Set501<T>, Iterable<T> {
         return new Iterator<>() {
             int current = 0;
             int i = 0;
-            Node nextNode;
             Node currentNode;
+            Node node = set[i];
 
             @Override
             public boolean hasNext() {
@@ -120,13 +120,13 @@ public class Set501Implement<T> implements Set501<T>, Iterable<T> {
 
             @Override
             public T next() {
-                while (set[i] == null) {
-                    i++;
+                while (node == null) {
+                    node = set[i++];
                 }
                 current++;
-                currentNode = set[i];
-                nextNode = currentNode.getNext();
-                return (T) currentNode.getValue();
+                currentNode = node;
+                node = node.getNext();
+                return (T)currentNode.getValue();
             }
         };
     }
