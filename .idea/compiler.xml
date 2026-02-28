@@ -6,7 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lab2_5_transport" />
         <module name="lab2_1_set" />
+        <module name="lab2_4_Iterator" />
+        <module name="lab2_6_graph" />
+        <module name="lab2_2_GenericList" />
+        <module name="lab2_3_Map" />
       </profile>
     </annotationProcessing>
   </component>

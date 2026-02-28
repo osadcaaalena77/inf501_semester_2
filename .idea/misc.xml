@@ -5,6 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/lab2_1_set/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_2_GenericList/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_3_Map/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_4_Iterator/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_5_transport/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_6_graph/pom.xml" />
       </list>
     </option>
   </component>

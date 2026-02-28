@@ -1,7 +1,5 @@
 package ru.itis.inf501.lab2_4_homework;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Test {
     public static void main(String args[]) {
         Set501Implement<Person> set = new Set501Implement<>();
