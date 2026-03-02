@@ -78,6 +78,22 @@ public class PrintService {
             }
             n--;
         }
+
+        int l = list.size() - 1;
+        while (l > 0) {
+            for (int i = 0; i < list.size() - 1; i++) {
+                if (Integer.parseInt(list.get(i).getRouteNumber())== Integer.parseInt(list.get(i + 1).getRouteNumber()) && list.get(i).getWorkTimeBegin().equals(list.get(i + 1).getWorkTimeBegin()) && compare(list.get(i).getWorkTimeEnd().charAt(0) , list.get(i + 1).getWorkTimeEnd().charAt(0)) > 0) {
+                    swap(i, i + 1, list);
+                } else if (Integer.parseInt(list.get(i).getRouteNumber())== Integer.parseInt(list.get(i + 1).getRouteNumber()) && list.get(i).getWorkTimeBegin().equals(list.get(i + 1).getWorkTimeBegin()) && compare(list.get(i).getWorkTimeEnd().charAt(0) , list.get(i + 1).getWorkTimeEnd().charAt(0)) == 0 && compare(list.get(i).getWorkTimeEnd().charAt(1) , list.get(i + 1).getWorkTimeEnd().charAt(1)) > 0 ) {
+                    swap(i, i + 1, list);
+                } else if (Integer.parseInt(list.get(i).getRouteNumber())== Integer.parseInt(list.get(i + 1).getRouteNumber()) && list.get(i).getWorkTimeBegin().equals(list.get(i + 1).getWorkTimeBegin()) && compare(list.get(i).getWorkTimeEnd().charAt(0) , list.get(i + 1).getWorkTimeEnd().charAt(0)) == 0 && compare(list.get(i).getWorkTimeEnd().charAt(1) , list.get(i + 1).getWorkTimeEnd().charAt(1)) == 0 && compare(list.get(i).getWorkTimeEnd().charAt(3) , list.get(i + 1).getWorkTimeEnd().charAt(3)) > 0) {
+                    swap(i,i + 1,list);
+                } else if (Integer.parseInt(list.get(i).getRouteNumber())== Integer.parseInt(list.get(i + 1).getRouteNumber()) && list.get(i).getWorkTimeBegin().equals(list.get(i + 1).getWorkTimeBegin())  && compare(list.get(i).getWorkTimeEnd().charAt(0) , list.get(i + 1).getWorkTimeEnd().charAt(0)) == 0 && compare(list.get(i).getWorkTimeEnd().charAt(1) , list.get(i + 1).getWorkTimeEnd().charAt(1)) == 0 && compare(list.get(i).getWorkTimeEnd().charAt(3) , list.get(i + 1).getWorkTimeEnd().charAt(3)) == 0 && compare(list.get(i).getWorkTimeEnd().charAt(4) , list.get(i + 1).getWorkTimeEnd().charAt(4)) > 0) {
+                    swap(i, i + 1, list);
+                }
+            }
+            l--;
+        }
         System.out.print("{");
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i).getRouteNumber() + " - " + list.get(i).getWorkTimeBegin() + " - " + list.get(i).getWorkTimeEnd());
