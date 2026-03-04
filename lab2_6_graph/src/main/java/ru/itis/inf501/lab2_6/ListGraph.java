@@ -24,9 +24,7 @@ public class ListGraph implements Iterable<Node>{
     }
 
     public void addAll(Set<Node> empty) {
-        for(Node node : empty) {
-            list.add(node);
-        }
+        list.addAll(empty);
     }
 
     @Override

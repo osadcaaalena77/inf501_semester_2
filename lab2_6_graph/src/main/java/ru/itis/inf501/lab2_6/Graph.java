@@ -32,4 +32,5 @@ public class Graph {
     public boolean isEmpty() {
         return map.isEmpty();
     }
+
 }

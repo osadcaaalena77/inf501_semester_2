@@ -18,6 +18,7 @@ public class Main {
             graph.removeDependencies(empty);
             result.addAll(empty);
         }
+
         System.out.println(result);
         for (Node x : result) {
             System.out.println(x);
