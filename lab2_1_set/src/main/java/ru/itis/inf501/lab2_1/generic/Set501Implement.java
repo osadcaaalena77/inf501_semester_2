@@ -41,7 +41,7 @@ public class Set501Implement<T> implements Set501Gen<T> {
     }
 
     @Override
-    public void add(Object o) {
+    public void add(T o) {
 //        if (contains(o)) {
 //            return;
 //        }
@@ -105,10 +105,25 @@ public class Set501Implement<T> implements Set501Gen<T> {
 
     @Override
     public String toString() {
-        return "Set501Implement{" +
-                "set = " + Arrays.toString(set) +
-                ", size = " + size +
-                '}';
+        String result = "Set501Implement{";
+        for (int i = 0; i < set.length; i++) {
+            if (set[i] == null) {
+                result += set[i];
+                result += ",";
+            } else if (set[i] != null && set[i].getNext() == null) {
+                result += set[i].getValue();
+                result += ",";
+            } else {
+                Node current = set[i];
+                while(current != null) {
+                    result += current.getValue();
+                    result += ",";
+                    current = current.getNext();
+                }
+            }
+
+        }
+        return result + "size = " + size + "}";
     }
 }
 
@@ -144,5 +159,5 @@ public class Set501Implement<T> implements Set501Gen<T> {
 //                ", size = " + size +
 //                '}';
 //    }
-//
+
 
