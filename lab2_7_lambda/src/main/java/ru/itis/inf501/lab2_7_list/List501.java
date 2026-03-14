@@ -1,6 +1,4 @@
-package ru.itis.inf501.lab2_7_list_homework;
-
-import ru.itis.inf501.lab2_7_set.Set501;
+package ru.itis.inf501.lab2_7_list;
 
 import java.util.Comparator;
 import java.util.List;

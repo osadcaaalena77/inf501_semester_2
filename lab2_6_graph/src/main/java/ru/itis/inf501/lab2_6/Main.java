@@ -19,7 +19,7 @@ public class Main {
             result.addAll(empty);
         }
 
-        System.out.println(result);
+        //System.out.println(result);
         for (Node x : result) {
             System.out.println(x);
         }

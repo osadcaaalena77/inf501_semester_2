@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/lab2_5_transport/pom.xml" />
         <option value="$PROJECT_DIR$/lab2_6_graph/pom.xml" />
         <option value="$PROJECT_DIR$/lab2_7_lambda/pom.xml" />
+        <option value="$PROJECT_DIR$/hi/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_8_stream_api/pom.xml" />
+        <option value="$PROJECT_DIR$/lab2_8_json/pom.xml" />
       </list>
     </option>
   </component>

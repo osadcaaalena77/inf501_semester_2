@@ -1,6 +1,5 @@
-package ru.itis.inf501.lab2_7_list_homework;
+package ru.itis.inf501.lab2_7_list;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
@@ -42,7 +41,7 @@ public class TestList {
                 return o1.compareTo(o2);
             }
         });
-        for(String s : list4) {
+        for (String s : list4) {
             System.out.println(s);
         }
 

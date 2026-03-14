@@ -1,7 +1,4 @@
-package ru.itis.inf501.lab2_7_list_homework;
-
-import ru.itis.inf501.lab2_7_set.Set501;
-import ru.itis.inf501.lab2_7_set.Set501Implements;
+package ru.itis.inf501.lab2_7_list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
