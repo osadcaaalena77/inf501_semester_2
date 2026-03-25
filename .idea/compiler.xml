@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lab2_5_transport" />
-        <module name="lab2_8_json" />
         <module name="lab2_2_GenericList" />
         <module name="lab2_1_set" />
         <module name="lab2_4_Iterator" />
@@ -19,6 +18,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hi" target="24" />
+      <module name="lab2_8_json" target="24" />
     </bytecodeTargetLevel>
   </component>
 </project>
