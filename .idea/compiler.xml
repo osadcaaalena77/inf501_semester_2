@@ -7,17 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lab2_5_transport" />
+        <module name="kr1_2_variant" />
         <module name="lab2_2_GenericList" />
+        <module name="lab2_10_io" />
         <module name="lab2_1_set" />
         <module name="lab2_4_Iterator" />
         <module name="lab2_6_graph" />
         <module name="lab2_8_stream_api" />
+        <module name="lab2_9_api" />
+        <module name="lab2_11_data_io_stream" />
         <module name="lab2_3_Map" />
         <module name="lab2_7_lambda" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="hi" target="24" />
+      <module name="kr_2variant" target="24" />
       <module name="lab2_8_json" target="24" />
     </bytecodeTargetLevel>
   </component>

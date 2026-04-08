@@ -3,6 +3,14 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/hi/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kr1_2_variant/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kr1_2_variant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kr_2variant/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kr_2variant/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_10_io/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_10_io/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_11_data_io_stream/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_11_data_io_stream/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_1_set/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_1_set/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_2_GenericList/src/main/java" charset="UTF-8" />
@@ -21,5 +29,7 @@
     <file url="file://$PROJECT_DIR$/lab2_8_json/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_8_stream_api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lab2_8_stream_api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_9_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lab2_9_api/src/main/resources" charset="UTF-8" />
   </component>
 </project>
