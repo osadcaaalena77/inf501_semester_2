@@ -1,17 +1,21 @@
 package ru.itis.inf501.lab2_11.objectio;
 
 import java.io.*;
+import java.util.Arrays;
 
-public class MainSerialize {
+public class MainSerializeBuffer {
     public static void main(String[] args) {
         //1. создаем объект
         Car car = new Car("KIA RIO","седан","12312334");
 
         //2. сериализуем объект
-        try (FileOutputStream fos = new FileOutputStream("car.obj",true); ObjectOutputStream os = new ObjectOutputStream(fos)) {
+
+        byte[] buffer;
+
+        try (ByteArrayOutputStream bos = new ByteArrayOutputStream(); ObjectOutputStream os = new ObjectOutputStream(bos)) {
 
             os.writeObject(car);
-            fos.flush();
+            buffer = bos.toByteArray();
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -19,7 +23,8 @@ public class MainSerialize {
             throw new RuntimeException(e);
         }
 
-        try (ObjectInputStream is = new ObjectInputStream(new FileInputStream("car.obj"))) {
+        try (ObjectInputStream is = new ObjectInputStream(
+                new ByteArrayInputStream(buffer))) {
             Car car1 = (Car) is.readObject();
             System.out.println(car1);
         } catch (FileNotFoundException e) {

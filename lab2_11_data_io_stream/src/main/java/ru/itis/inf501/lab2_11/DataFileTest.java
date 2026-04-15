@@ -9,7 +9,7 @@ import java.util.SimpleTimeZone;
 //  name - ФИО: String
 //  birthday: String(yyyyMMdd)  mm - для минут
 //  gender: byte {0 - M, 1 - F}
-// ФОРМАТ:  заголовок(HEADER)
+//ФОРМАТ:  заголовок(HEADER)
 //          данные(DATA)
 //          lenName(1)
 //          name(lenName)
